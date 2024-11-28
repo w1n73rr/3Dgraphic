@@ -11,7 +11,7 @@
 
         }
 
-        private double  R = 0;
+        private double R = 0;
         private double r = 0;
         private double A = 0;
         private double B = 0;
@@ -97,7 +97,7 @@
                 int screenX2 = Convert.ToInt32(spiral_y[i + 1]);
                 int screenY2 = Convert.ToInt32(spiral_z[i + 1]);
 
-                int circleRadius = 10;
+                int circleRadius = measure;
                 int numCirclePoints = 36;
 
                 bresenharmCircle(screenX1, screenY1, circleRadius, mbit);
@@ -214,7 +214,7 @@
 
                 trackbar_movement.Value = 0;
                 trackbar_turn_x.Value = 0;
-                trackbar_turn_y.Value = 0;
+                trackbar_turn_y.Value = 50;
                 trackbar_turn_z.Value = 0;
                 trackbar_size.Value = 5;
 
@@ -222,6 +222,11 @@
 
 
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
